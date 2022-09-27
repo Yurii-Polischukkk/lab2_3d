@@ -49,7 +49,7 @@ public class PlayerMovment : MonoBehaviour
 
 
         transform.rotation  = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y+mouseVector.x , transform.rotation.eulerAngles.z);
-        cameraPosition.rotation = Quaternion.Euler(cameraPosition.rotation.eulerAngles + new Vector3(mouseVector.y, 0f, 0f));
+        cameraPosition.rotation = Quaternion.Euler(cameraPosition.rotation.eulerAngles + new Vector3(mouseVector.y*-1, 0f, 0f)) ;
 
     }
 
